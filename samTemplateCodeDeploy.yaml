@@ -6,7 +6,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       AutoPublishAlias: live
-      Handler: lambda.handler
+      Handler: lambda_function.handler
       Runtime: python2.7
       MemorySize: 256
       Tracing: Active
