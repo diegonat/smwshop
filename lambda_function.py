@@ -20,6 +20,7 @@ def response(status_code, response_body):
                 },
             }
 
+ctypes.cdll.LoadLibrary('lib/libquadmath.so.0')
 ctypes.cdll.LoadLibrary('lib/libgfortran.so.3')
 ctypes.cdll.LoadLibrary('lib/libgomp.so.1')
 ctypes.cdll.LoadLibrary('lib/libatlas.so.3')
