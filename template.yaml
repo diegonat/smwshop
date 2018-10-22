@@ -8,7 +8,7 @@ Resources:
       Handler: lambda_function.handler
       Runtime: python2.7
       Description: ''
-      MemorySize: 128
+      MemorySize: 256
       Timeout: 15
       CodeUri: .debug/
       Events:
