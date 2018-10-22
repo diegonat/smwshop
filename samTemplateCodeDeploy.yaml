@@ -19,7 +19,7 @@ Resources:
             Path: /
             Method: POST
       DeploymentPreference:
-        Type: Canary10Percent5Minutes
+        Type: AllAtOnce
         Hooks:
           PreTraffic: !Ref preTrafficHook
 
