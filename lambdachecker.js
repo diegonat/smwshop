@@ -21,8 +21,7 @@ exports.handler = (event, context, callback) => {
 	var lambdaParams = {
 		FunctionName: functionToTest,
 		InvocationType: "RequestResponse",
-		Payload: new Buffer('{ "body": "Call now and get 80% discount on your next pair of shoes! Call 8003344555!"	}')
-	};
+	Payload: new Buffer('{ "body": "Call now and get 80% discount on your next pair of shoes! Call 8003344555!", "httpMethod": "POST"	}')	};
 
 	var lambdaResult = 'Failed'
 
