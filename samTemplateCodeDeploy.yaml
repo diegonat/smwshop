@@ -17,12 +17,12 @@ Resources:
           Type: Api
           Properties:
             Path: /
-            Method: any
+            Method: POST
         OptionsInference:
           Type: Api
           Properties:
             Path: /
-    Method: OPTIONS
+            Method: OPTIONS
       DeploymentPreference:
         Type: AllAtOnce
         Hooks:
