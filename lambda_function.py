@@ -2,6 +2,7 @@ import ctypes
 import os
 import logging
 import numpy as np
+import json
 from sms_spam_classifier_utilities import one_hot_encode
 from sms_spam_classifier_utilities import vectorize_sequences
 
@@ -11,7 +12,7 @@ print "logging"
 def response(status_code, response_body):
     return {
                 'statusCode': status_code,
-                'body': str(response_body),
+                'body': json.dumps(response_body),
                 'headers': {
                     'Content-Type': 'application/json',
                     'Access-Control-Allow-Origin' : '*',
