@@ -13,11 +13,16 @@ Resources:
       Timeout: 10
       CodeUri: ./
       Events:
-        SMSspam:
+        GetInference:
           Type: Api
           Properties:
             Path: /
-            Method: POST
+            Method: any
+        OptionsInference:
+          Type: Api
+          Properties:
+            Path: /
+    Method: OPTIONS
       DeploymentPreference:
         Type: AllAtOnce
         Hooks:
